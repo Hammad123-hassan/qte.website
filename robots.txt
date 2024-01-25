@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https://qte.se/sitemap-index.xml
+Host: https://qte.se
