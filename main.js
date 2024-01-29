@@ -28,3 +28,33 @@ document.addEventListener("DOMContentLoaded", function () {
     navMenu.classList.toggle("active"); // You may need to define a CSS class for 'open'
   });
 });
+
+
+// tabs js
+
+document.getElementById('taball').style.display = 'block';
+
+function filterNews(category) {
+   var tabs = document.querySelectorAll('.tab-content');
+   tabs.forEach(function(tab) {
+      tab.style.display = 'none';
+   });
+
+   var buttons = document.querySelectorAll('.tab-btn');
+   buttons.forEach(function(button) {
+      button.classList.remove('active');
+   });
+
+   if (category === 'all') {
+      tabs.forEach(function(tab) {
+         tab.style.display = 'block';
+      });
+   } else {
+      var selectedTab = document.getElementById('tab' + category);
+      selectedTab.style.display = 'block';
+   }
+
+   // Add active class to the clicked button
+   var clickedButton = document.querySelector('.tab-btn[data-category="' + category + '"]');
+   clickedButton.classList.add('active');
+}
