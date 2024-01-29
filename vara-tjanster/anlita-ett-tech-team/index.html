@@ -567,28 +567,49 @@
                   </section>
                   <section id="work-with-us" class="contactFormContentstyle__Section-sc-1wvwxzl-0 iYyjAt">
                      <div class="wrapper__main_inner-sc-d7vgux-0 contactFormContentstyle__MainInner-sc-1wvwxzl-1 fhPlTV laXlEt">
-                        <div class="contactFormContentstyle__Content-sc-1wvwxzl-2 hXqva">
-                           <h2 class="text__heading_xl-sc-1xracbr-2 contactFormContentstyle__Header-sc-1wvwxzl-3 dDQFpA GuKcz">Vill du veta mer?</h2>
-                           <p class="text__paragraph-sc-1xracbr-7 contactFormContentstyle__Paragraph-sc-1wvwxzl-4 kITvjv bBiTzt">Behöver du någon som lotsar dig igenom den digitala världen? Vi svarar gärna på dina frågor, guidar dig eller berättar mer om hur vi jobbar. Skicka ett mail så kontaktar vi dig! </p>
-                           <h5 class="text__heading_sm-sc-1xracbr-5 contactFormContentstyle__SubHeader-sc-1wvwxzl-5 iehGeS ijChgB">Send a Email</h5>
-                           <div class="contactFormContentstyle__FormWrapper-sc-1wvwxzl-12 iiTQIG">
-                              <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi"><input type="text" placeholder="Namn*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq"/><input type="text" placeholder="E-post*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq"/><input type="text" placeholder="Telefonnummer" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq"/><input type="text" placeholder="Jobbtitel" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq"/></div>
-                              <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi">
-                                 <textarea placeholder="Meddelande" class="contactFormContentstyle__InputField-sc-1wvwxzl-17 jLiNwd"></textarea>
-                                 <p class="text__paragraph_small-sc-1xracbr-9 contactFormContentstyle__InputLabel-sc-1wvwxzl-18 ksIOdr jLQVVy"><input type="checkbox" class="contactFormContentstyle__InputCheckbox-sc-1wvwxzl-19 cSaYma"/>Jag godkänner villkoren i qte:s<a href="../../privacy-cookie-policy/index.html" class="contactFormContentstyle__GdprLink-sc-1wvwxzl-20 ildqRY">personuppgiftspolicy.</a></p>
-                                 <button class="contactFormContentstyle__SubmitButton-sc-1wvwxzl-21 gLuJmm">Skicka</button>
-                              </div>
+                       <div class="contactFormContentstyle__Content-sc-1wvwxzl-2 hXqva">
+                         <h2 class="text__heading_xl-sc-1xracbr-2 contactFormContentstyle__Header-sc-1wvwxzl-3 dDQFpA GuKcz">Vill du veta mer?</h2>
+                         <p class="text__paragraph-sc-1xracbr-7 contactFormContentstyle__Paragraph-sc-1wvwxzl-4 kITvjv bBiTzt">Behöver du någon som lotsar dig igenom den digitala världen? Vi svarar gärna på dina frågor, guidar dig eller berättar mer om hur vi jobbar. Skicka ett mail så kontaktar vi dig! </p>
+                         <h5 class="text__heading_sm-sc-1xracbr-5 contactFormContentstyle__SubHeader-sc-1wvwxzl-5 iehGeS ijChgB">Send an Email</h5>
+                         <form id="yourForm" class="contactFormContentstyle__FormWrapper-sc-1wvwxzl-12 iiTQIG">
+                           <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi">
+                             <input type="text" placeholder="Namn*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="name" required />
+                             <div class="error-message" id="nameError"></div>
+                             <input type="email" placeholder="E-post*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="email" required />
+                             <div class="error-message" id="emailError"></div>
+                             <input type="tel" placeholder="Telefonnummer" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="phoneNumber" />
+                             <input type="text" placeholder="Jobbtitel" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="jobTitle" />
                            </div>
-                        </div>
-                        <div class="contactFormContentstyle__Contact-sc-1wvwxzl-6 jOBgVe">
-                           <img src="https://wp.qteprod.se/wp-content/uploads/2023/12/jonatan_qte.jpg" alt="" class="contactFormContentstyle__Image-sc-1wvwxzl-7 gFpHiR"/>
-                           <div class="contactFormContentstyle__TextContainer-sc-1wvwxzl-8 dYcXxb">
-                              <h5 class="text__heading_sm-sc-1xracbr-5 contactFormContentstyle__ContactHeader-sc-1wvwxzl-9 iehGeS jTYwcm">Psst! Du kan också kontakta vår VD Jonatan Arnlund direkt här:</h5>
-                              <a href="mailto:jonatan@qte.se" class="contactFormContentstyle__ContactEmail-sc-1wvwxzl-10 hOFlsN">jonatan@qte.se</a><a href="tel:0733220455" class="contactFormContentstyle__ContactPhone-sc-1wvwxzl-11 kwJqqX">073-322 04 55</a>
+                           <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi">
+                             <textarea placeholder="Meddelande" class="contactFormContentstyle__InputField-sc-1wvwxzl-17 jLiNwd" name="message"></textarea>
+                             <div class="error-message" id="messageError"></div>
+                             <p class="text__paragraph_small-sc-1xracbr-9 contactFormContentstyle__InputLabel-sc-1wvwxzl-18 ksIOdr jLQVVy">
+                               <input type="checkbox" class="contactFormContentstyle__InputCheckbox-sc-1wvwxzl-19 cSaYma" name="checkbox" required />Jag godkänner villkoren i qte:s
+                               <a href="../../privacy-cookie-policy/index.html" class="contactFormContentstyle__GdprLink-sc-1wvwxzl-20 ildqRY">personuppgiftspolicy.</a>
+                             </p>
+                             <button type="button" onclick="submitForm()" class="contactFormContentstyle__SubmitButton-sc-1wvwxzl-21 gLuJmm" >Skicka</button>
+                             <p id="successMessage" style="display: none; color: green; margin-top: 10px; font-weight: bold;">Tack för ditt meddelande! Vi återkommer snart.</p>
                            </div>
-                        </div>
+                         </form>
+                       </div>
+                       <div class="contactFormContentstyle__Contact-sc-1wvwxzl-6 jOBgVe">
+                         <img src="https://wp.qteprod.se/wp-content/uploads/2023/12/jonatan_qte.jpg" alt="" class="contactFormContentstyle__Image-sc-1wvwxzl-7 gFpHiR" />
+                         <div class="contactFormContentstyle__TextContainer-sc-1wvwxzl-8 dYcXxb">
+                           <h5 class="text__heading_sm-sc-1xracbr-5 contactFormContentstyle__ContactHeader-sc-1wvwxzl-9 iehGeS jTYwcm">Psst! Du kan också kontakta vår VD Jonatan Arnlund direkt här:</h5>
+                           <a href="mailto:jonatan@qte.se" class="contactFormContentstyle__ContactEmail-sc-1wvwxzl-10 hOFlsN">jonatan@qte.se</a>
+                           <a href="tel:0733220455" class="contactFormContentstyle__ContactPhone-sc-1wvwxzl-11 kwJqqX">073-322 04 55</a>
+                         </div>
+                       </div>
                      </div>
-                  </section>
+                   
+                     <style>
+                       .error-message {
+                         color: red;
+                         font-size: 12px;
+                         margin-top: 5px;
+                       }
+                     </style>
+                   </section>
                </main>
                <footer class="Footerstyle__Footer-sc-3wf7fx-0 bkgkIy">
                   <div class="wrapper__main_inner-sc-d7vgux-0 Footerstyle__MainInner-sc-3wf7fx-1 fhPlTV gapTtW">
