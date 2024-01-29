@@ -53,8 +53,7 @@ function filterNews(category) {
       var selectedTab = document.getElementById('tab' + category);
       selectedTab.style.display = 'block';
    }
-
-   // Add active class to the clicked button
    var clickedButton = document.querySelector('.tab-btn[data-category="' + category + '"]');
    clickedButton.classList.add('active');
 }
+
