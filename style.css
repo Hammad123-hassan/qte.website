@@ -64,11 +64,22 @@
         height: 43px;
         width: 43px;
     }
-
-
+  
+}
+@media (max-width: 992px) {
+    .DUONk{
+        min-height: auto !important;
+        height: auto!important;
+        display: block;
+        padding: 20px;
+    }
+    .Servicesstyle__ServiceBlock-sc-jlqcj3-5{
+        flex-direction: column !important;
+      }
+    
 }
 .DUONk{
-    min-height: 840px !important;
-    height: 840px !important;
+    min-height: 840px ;
+    height: 840px ;
     display: block;
 }
