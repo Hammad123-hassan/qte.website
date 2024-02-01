@@ -11,7 +11,8 @@
     opacity: 0.7;
     cursor: pointer;
 }
-.jNlDeF.active{
+
+.jNlDeF.active {
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -64,22 +65,110 @@
         height: 43px;
         width: 43px;
     }
-  
+
 }
+
 @media (max-width: 992px) {
-    .DUONk{
+    .DUONk {
         min-height: auto !important;
-        height: auto!important;
+        height: auto !important;
         display: block;
         padding: 20px;
     }
-    .Servicesstyle__ServiceBlock-sc-jlqcj3-5{
+
+    .Servicesstyle__ServiceBlock-sc-jlqcj3-5 {
         flex-direction: column !important;
-      }
-    
+    }
+
 }
-.DUONk{
-    min-height: 840px ;
-    height: 840px ;
+
+.eSEVla {
+    width: 485px;
+    max-width: 100%;
+    height: calc(-50px + 100vh);
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    z-index: 120;
+    transition: all 0.3s ease-in-out 0s;
+    overflow: hidden;
+    background-color: #0C3A53;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 680px) {
+    .eSEVla {
+        top: 0px;
+        height: 100vh;
+    }
+}
+
+.jhmINn .iehGeS {
+
+    color: white !important;
+}
+
+.jhmINn .ksIOdr {
+
+    color: white !important;
+}
+
+.gifEzQ {
+
+    right: 13px !important;
+
+}
+
+.gifEzQ svg {
+    fill: white !important;
+}
+
+.fmiVnW {
+
+    border-bottom: 1px solid white !important;
+    color: white !important;
+
+}
+
+
+.caFxEC {
+
+    color: #ffffff !important;
+    background-color: #0EBAB1 !important;
+
+}
+.Casesstyle__Background-sc-fzwnhc-0.eGjaET{
+    background-color: #0EBAB1 !important;
+}
+/* .bkgkIy{
+    color: #ffffff !important;
+    background-color: #0EBAB1 !important;
+}
+.bkgkIy .fOHICr, .bkgkIy .gZRRnH ,.bkgkIy .sojqq{
+   opacity: 1 !important;
+
+} */
+.jhmINn {
+    width: 100%;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 50px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+.jQETUf {
+    width: 100%;
+    height: fit-content;
+    max-height: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: auto;
+}
+
+.DUONk {
+    min-height: 840px;
+    height: 840px;
     display: block;
 }

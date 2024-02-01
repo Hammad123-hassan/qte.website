@@ -1,4 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var container = document.querySelector(".SideContactFormstyled__Container-sc-xpl7fe-0");
+  var formWrapper = document.querySelector(".SideContactFormstyled__FormWrapper-sc-xpl7fe-2");
+
+  container.addEventListener("click", function () {
+      // Toggle the visibility of the form wrapper
+      if (formWrapper.style.display === "none" || formWrapper.style.display === "") {
+          formWrapper.style.display = "flex";
+        
+          // Remove the gYoBYn class and add the eSEVla class
+          formWrapper.classList.remove("gYoBYn");
+          formWrapper.classList.add("eSEVla");
+      } else {
+          formWrapper.style.display = "none";
+           
+
+          // Add the gYoBYn class and remove the eSEVla class
+          formWrapper.classList.remove("eSEVla");
+          formWrapper.classList.add("gYoBYn");
+      }
+  });
+
+  // Close the form wrapper when clicking the close button
+  var closeButton = formWrapper.querySelector(".SideContactFormstyled__CloseButton-sc-xpl7fe-6");
+  closeButton.addEventListener("click", function () {
+      formWrapper.style.display = "none";
+
+      // Add the gYoBYn class and remove the eSEVla class
+      formWrapper.classList.remove("eSEVla");
+      formWrapper.classList.add("gYoBYn");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const hamburgerIcon = document.querySelector(
     ".Headerstyle__Hamburger-sc-11sf5xg-4"
   );
@@ -29,32 +62,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // tabs js
 
-document.getElementById('taball').style.display = 'block';
+document.getElementById("taball").style.display = "block";
 
 function filterNews(category) {
-   var tabs = document.querySelectorAll('.tab-content');
-   tabs.forEach(function(tab) {
-      tab.style.display = 'none';
-   });
+  var tabs = document.querySelectorAll(".tab-content");
+  tabs.forEach(function (tab) {
+    tab.style.display = "none";
+  });
 
-   var buttons = document.querySelectorAll('.tab-btn');
-   buttons.forEach(function(button) {
-      button.classList.remove('active');
-   });
+  var buttons = document.querySelectorAll(".tab-btn");
+  buttons.forEach(function (button) {
+    button.classList.remove("active");
+  });
 
-   if (category === 'all') {
-      tabs.forEach(function(tab) {
-         tab.style.display = 'block';
-      });
-   } else {
-      var selectedTab = document.getElementById('tab' + category);
-      selectedTab.style.display = 'block';
-   }
-   var clickedButton = document.querySelector('.tab-btn[data-category="' + category + '"]');
-   clickedButton.classList.add('active');
+  if (category === "all") {
+    tabs.forEach(function (tab) {
+      tab.style.display = "block";
+    });
+  } else {
+    var selectedTab = document.getElementById("tab" + category);
+    selectedTab.style.display = "block";
+  }
+  var clickedButton = document.querySelector(
+    '.tab-btn[data-category="' + category + '"]'
+  );
+  clickedButton.classList.add("active");
 }
 
 function submitForm() {
@@ -80,7 +114,6 @@ function submitForm() {
 }
 
 function validateForm(formData) {
-
   clearErrorMessages();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!formData.email || !emailRegex.test(formData.email)) {
