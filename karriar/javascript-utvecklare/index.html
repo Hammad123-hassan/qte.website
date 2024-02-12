@@ -489,7 +489,7 @@
                               <div class="Headerstyle__MenuGroupWrapper-sc-11sf5xg-12 dwPtvC"><a sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa" href="index.html#">Vår expertis</a><a href="../../vara-tjanster/apputveckling/index.html" sublink="true" class="Headerstyle__NewNav-sc-11sf5xg-13 bYcoqu">Apputveckling</a><a href="../../vara-tjanster/webbutveckling/index.html" sublink="true" class="Headerstyle__NewNav-sc-11sf5xg-13 bYcoqu">Webbutveckling</a><a href="../../vara-tjanster/automatisering-integrationer/index.html" sublink="true" class="Headerstyle__NewNav-sc-11sf5xg-13 bYcoqu">Automatisering och integrationer</a><a href="../../vara-tjanster/ui-ux-design/index.html" sublink="true" class="Headerstyle__NewNav-sc-11sf5xg-13 bYcoqu">UX/UI-design</a></div>
                               <div class="Headerstyle__MenuGroupWrapper-sc-11sf5xg-12 dwPtvC"><a href="../../vara-tjanster/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Våra tjänster</a><a href="../../vara-tjanster/starta-ett-projekt/index.html" sublink="true" class="Headerstyle__NewNav-sc-11sf5xg-13 bYcoqu">Starta ett projekt</a></div>
                            </div>
-                           <a href="../../om-oss/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Om oss</a><a href="../../cases/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Cases</a><a href="../../news/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Nyheter</a><a href="../index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Karriär</a><a href="../../kontakta-oss/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Kontakt</a>
+                           <a href="../../om-oss/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Om oss</a><a href="../../cases/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Cases</a><a href="../../kontakta-oss/index.html" sublink="false" class="Headerstyle__NewNav-sc-11sf5xg-13 cUOlTa">Kontakt</a>
                            <div class="SideContactFormstyled__Container-sc-xpl7fe-0 gNFoLC">
                               <div color="#0C3A53;Default" class="SideContactFormstyled__Button-sc-xpl7fe-1 jbaOBC">
                                  Boka introduktionsmöte<!-- --> 
@@ -508,14 +508,22 @@
                                  <h5 class="text__heading_sm-sc-1xracbr-5 SideContactFormstyled__FormTitle-sc-xpl7fe-8 iehGeS eptbJs">Kom igång redan idag!</h5>
                                  <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__FormParagraph-sc-xpl7fe-9 ksIOdr cyMEjy">Boka 30 minuters kostnadsfri rådgivning med oss för att få våra tips och ta reda på vad vi kan åstadkomma tillsammans.</p>
                                  <div class="SideContactFormstyled__InnerFormWrapper-sc-xpl7fe-5 qYfOQ">
-                                    <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl"><input type="text" placeholder="Namn*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc"/><input type="text" placeholder="E-post*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc"/><input type="text" placeholder="Telefonnummer" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc"/></div>
                                     <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
-                                       <textarea placeholder="Meddelande" class="SideContactFormstyled__InputField-sc-xpl7fe-21 bYTiwv"></textarea>
-                                       <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__InputLabel-sc-xpl7fe-22 ksIOdr iYTukQ">
-                                       <div class="SideContactFormstyled__CheckBoxWrapper-sc-xpl7fe-23 kQWdyq"><input type="checkbox" class="SideContactFormstyled__InputCheckbox-sc-xpl7fe-24 gLyNAr"/>Jag godkänner villkoren i qte:s<a href="../../privacy-cookie-policy/index.html" class="SideContactFormstyled__GdprLink-sc-xpl7fe-25 fmiVnW">personuppgiftspolicy.</a></div>
-                                       </p><button class="SideContactFormstyled__SubmitButton-sc-xpl7fe-26 caFxEC">Skicka</button>
+                                        <input type="text" placeholder="Namn*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="name"/>
+                                        <input type="text" placeholder="E-post*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="email"/>
+                                        <input type="text" placeholder="Telefonnummer" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="phone"/>
                                     </div>
-                                 </div>
+                                    <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
+                                        <textarea placeholder="Meddelande" class="SideContactFormstyled__InputField-sc-xpl7fe-21 bYTiwv" id="message"></textarea>
+                                        <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__InputLabel-sc-xpl7fe-22 ksIOdr iYTukQ">
+                                            <div class="SideContactFormstyled__CheckBoxWrapper-sc-xpl7fe-23 kQWdyq">
+                                                <input type="checkbox" class="SideContactFormstyled__InputCheckbox-sc-xpl7fe-24 gLyNAr" id="agree"/>Jag godkänner villkoren i qte:s
+                                                <a href="privacy-cookie-policy/index.html" class="SideContactFormstyled__GdprLink-sc-xpl7fe-25 fmiVnW">personuppgiftspolicy.</a>
+                                            </div>
+                                        </p>
+                                        <button class="SideContactFormstyled__SubmitButton-sc-xpl7fe-26 caFxEC" onclick="submitForm()">Skicka</button>
+                                    </div>
+                                </div>
                               </div>
                               <div class="SideContactFormstyled__ContactContainer-sc-xpl7fe-10 jQETUf">
                                  <div class="SideContactFormstyled__ContactWrapper-sc-xpl7fe-11 cqWxmg">
@@ -1234,7 +1242,6 @@
                               <div class="Footerstyle__LinkContainer-sc-3wf7fx-6 fcPhxw">
                                  <div class="Footerstyle__LinkWrapper-sc-3wf7fx-7 cBuxex"><a href="../../om-oss/index.html" target="" class="Footerstyle__FooterLink-sc-3wf7fx-8 fOHICr">Om oss</a></div>
                                  <div class="Footerstyle__LinkWrapper-sc-3wf7fx-7 cBuxex"><a href="../../cases/index.html" target="" class="Footerstyle__FooterLink-sc-3wf7fx-8 fOHICr">Våra case</a></div>
-                                 <div class="Footerstyle__LinkWrapper-sc-3wf7fx-7 cBuxex"><a href="../index.html" target="" class="Footerstyle__FooterLink-sc-3wf7fx-8 fOHICr">Karriär</a></div>
                                  <div class="Footerstyle__LinkWrapper-sc-3wf7fx-7 cBuxex"><a href="../../kontakta-oss/index.html" target="" class="Footerstyle__FooterLink-sc-3wf7fx-8 fOHICr">Kontakt</a></div>
                                  <div class="Footerstyle__LinkWrapper-sc-3wf7fx-7 cBuxex"><a href="../../hallbarhet/index.html" target="" class="Footerstyle__FooterLink-sc-3wf7fx-8 fOHICr">Hållbarhet</a></div>
                               </div>

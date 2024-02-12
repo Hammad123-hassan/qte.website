@@ -144,18 +144,18 @@ function submitForm() {
   var message = document.getElementById('message').value;
   var agree = document.getElementById('agree').checked;
 
-  // Validate inputs
   if (name === '' || email === '' || (phone === '' && message === '') || !agree) {
       alert('Please fill in all required fields and agree to the terms.');
       return;
   }
 
-  // Log data to console
+  
   console.log('Name:', name);
   console.log('Email:', email);
   console.log('Phone:', phone);
   console.log('Message:', message);
   console.log('Agree:', agree);
 
-  // You can submit the form data to your server here if needed
+ 
 }
+
