@@ -159,3 +159,9 @@ function submitForm() {
  
 }
 
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+    var scrollTop = $(this).scrollTop();
+    $('.box').css('top', scrollTop + 'px');
+  });
+});
