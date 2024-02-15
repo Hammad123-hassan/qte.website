@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
-Sitemap: https://qte.se/sitemap-index.xml
-Host: https://qte.se
+Sitemap: https://Pasver.se/sitemap-index.xml
+Host: https://Pasver.se

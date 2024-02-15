@@ -1,5 +1,5 @@
 /*! For license information please see app-40c35b496b3ab4a12bd3.js.LICENSE.txt */
-(self.webpackChunkqte_se_v2 = self.webpackChunkqte_se_v2 || []).push([
+(self.webpackChunkPasver_se_v2 = self.webpackChunkPasver_se_v2 || []).push([
   [143],
   {
     3278: function (e) {
@@ -2697,7 +2697,7 @@
               requestConcurrency: 15,
               previewRequestConcurrency: 5,
             },
-            url: "https://wp.qteprod.se/graphql",
+            url: "https://wp.Pasverprod.se/graphql",
             verbose: !0,
             catchLinks: !0,
           },
