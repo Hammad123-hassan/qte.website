@@ -139,9 +139,11 @@
     background-color: #0EBAB1 !important;
 
 }
-.Casesstyle__Background-sc-fzwnhc-0.eGjaET{
+
+.Casesstyle__Background-sc-fzwnhc-0.eGjaET {
     background-color: #0EBAB1 !important;
 }
+
 /* .bkgkIy{
     color: #ffffff !important;
     background-color: #0EBAB1 !important;
@@ -172,6 +174,7 @@
     height: 840px;
     display: block;
 }
+
 .box {
     width: 100px;
     height: 100px;
@@ -180,9 +183,34 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
- .egvMye  , .XPBsz {
-    
+}
+
+.egvMye,
+.XPBsz {
+
     font-size: 15px !important;
 }
 
+@media (min-width: 680px) {
+    .jRognm {
+        padding: 0px;
+        background-color: transparent;
+        left: -25px !important;
+        width: 120px !important;
+        top: 10px !important;
+        padding: 0px !important;
+    }
+}
+
+.jRognm {
+    border-radius: 5px;
+    /* background-color: rgb(12, 58, 83); */
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 70px;
+    position: fixed;
+    left: 12px;
+    top: 4px;
+    z-index: 1000;
+}
