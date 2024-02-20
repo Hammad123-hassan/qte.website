@@ -27,7 +27,9 @@
     padding: 12px 20px 100px;
     overflow-y: auto;
 }
-
+.gBxDIb{
+    object-fit: cover;
+}
 .dzplXw.active {
     cursor: pointer;
     transition: all 0.3s ease 0s;
