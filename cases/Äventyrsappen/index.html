@@ -398,7 +398,7 @@
                            <div aria-hidden="true" style="padding-top:49.548736462093856%"></div>
                            <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;object-fit:contain"></div>
                            <picture>
-                              <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;opacity:0" sizes="100vw" decoding="async" loading="eager" src="/Images/logo.png" srcSet="/Images/logo.png" alt="logo"/>
+                              <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;opacity: 1;" sizes="100vw" decoding="async" loading="eager" src="../../Images/logo.png" srcSet="../../Images/logo.png" alt="logo"/>
                            </picture>     
                         </div>
                      </a>
@@ -488,7 +488,7 @@
                   </section>
                   <section id="images-diagonal" class="ImagesDiagonalstyle__Images-sc-j7cb3z-0 jFRVZm scroll">
                    <a href="https://natours-meta.netlify.app/">
-                     <div class="ImagesDiagonalstyle__ImageBlock-sc-j7cb3z-1 hpncRc">
+                     <div class="ImagesDiagonalstyle__ImageBlock-sc-j7cb3z-1 hpncRc container">
                         <div class="ImagesDiagonalstyle__ColumnTwo-sc-j7cb3z-3 imKEEg rowOne">
                            <div class="ImagesDiagonalstyle__SingleImageContainer-sc-j7cb3z-6 eYgrkM"><img src="/Images/out-one.png" alt="" class="ImagesDiagonalstyle__Image-sc-j7cb3z-7 lkjSuo"/></div>
                            <div class="ImagesDiagonalstyle__SingleImageContainer-sc-j7cb3z-6 eYgrkM"><img src="/Images/out-two.png" alt="" class="ImagesDiagonalstyle__Image-sc-j7cb3z-7 lkjSuo"/></div>
@@ -720,6 +720,44 @@
          </div>
          <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
       </div>
+    
       <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/cases/Äventyrsappen/";window.___webpackCompilationHash="6eca5ca3beedc7450e8c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-752e2013a31fa14e7eac.js"],"app":["/app-40c35b496b3ab4a12bd3.js"],"gatsby-plugin-image":["/gatsby-plugin-image-e0257f4cbe694c90b7ba.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-94cf5e3edf63eec8bb55.js"],"component---src-templates-news-tsx":["/component---src-templates-news-tsx-86f9f5d83b324bc34c0e.js"],"component---src-templates-page-tsx":["/component---src-templates-page-tsx-2f281419ac9369c01938.js"]};/*]]>*/</script><script src="../../polyfill-752e2013a31fa14e7eac.js" nomodule=""></script><script src="../../app-40c35b496b3ab4a12bd3.js" async=""></script><script src="../../dc6a8720040df98778fe970bf6c000a41750d3ae-a3cb1a49be3896b12e36.js" async=""></script><script src="../../framework-ab0eeed1aa5464a561cf.js" async=""></script><script src="../../webpack-runtime-710d81178e1f209a136c.js" async=""></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+      <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+// Define initial transform values for each class
+const initialTransforms = {
+    ".rowOne": 100,
+    ".rowTwo": -100,
+    ".rowThree": 100,
+   
+};
+
+// Create a timeline for each class
+Object.keys(initialTransforms).forEach(className => {
+    const initialTransform = initialTransforms[className];
+    
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.container',
+            start: 'left center', // Adjust as needed
+            end: 'right center', // Adjust as needed
+            scrub: true
+        }
+    });
+
+    tl.to(className, { 
+        duration: 0.1, 
+        ease: 'power2.inOut', 
+        opacity: 1, 
+        x: initialTransform, 
+        stagger: 6 
+    });
+});
+
+
+      </script>
    </body>
 </html>
