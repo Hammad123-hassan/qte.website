@@ -445,22 +445,21 @@
                                  </button>
                                  <h5 class="text__heading_sm-sc-1xracbr-5 SideContactFormstyled__FormTitle-sc-xpl7fe-8 iehGeS eptbJs">Kom igång redan idag!</h5>
                                  <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__FormParagraph-sc-xpl7fe-9 ksIOdr cyMEjy">Boka 30 minuters kostnadsfri rådgivning med oss för att få våra tips och ta reda på vad vi kan åstadkomma tillsammans.</p>
-                                 <div class="SideContactFormstyled__InnerFormWrapper-sc-xpl7fe-5 qYfOQ">
-                                    <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
-                                        <input type="text" placeholder="Namn*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="name"/>
-                                        <input type="text" placeholder="E-post*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="email"/>
-                                        <input type="text" placeholder="Telefonnummer" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="phone"/>
-                                    </div>
-                                    <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
-                                        <textarea placeholder="Meddelande" class="SideContactFormstyled__InputField-sc-xpl7fe-21 bYTiwv" id="message"></textarea>
-                                        <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__InputLabel-sc-xpl7fe-22 ksIOdr iYTukQ">
-                                            <div class="SideContactFormstyled__CheckBoxWrapper-sc-xpl7fe-23 kQWdyq">
-                                                <input type="checkbox" class="SideContactFormstyled__InputCheckbox-sc-xpl7fe-24 gLyNAr" id="agree"/>Jag godkänner villkoren i pasver:s
-                                                <a href="../../privacy-cookie-policy/index.html" class="SideContactFormstyled__GdprLink-sc-xpl7fe-25 fmiVnW">personuppgiftspolicy.</a>
-                                            </div>
-                                        </p>
-                                        <button class="SideContactFormstyled__SubmitButton-sc-xpl7fe-26 caFxEC" onclick="submitForm()">Skicka</button>
-                                    </div>
+                               <div class="SideContactFormstyled__InnerFormWrapper-sc-xpl7fe-5 qYfOQ">
+                                   <form action="" id="yourForm">
+                                        <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
+                                            <input type="text" placeholder="Namn*" value="" name="name" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" required="">
+                                            <input type="email" placeholder="E-post*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="email" name="email" required="">
+                                            <input type="text" placeholder="Telefonnummer" name="phoneNumber" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc">
+                                        </div>
+                                        <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
+                                            <textarea placeholder="Meddelande" name="message" class="SideContactFormstyled__InputField-sc-xpl7fe-21 bYTiwv"></textarea>
+                                            <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__InputLabel-sc-xpl7fe-22 ksIOdr iYTukQ">
+                                                <button class="SideContactFormstyled__SubmitButton-sc-xpl7fe-26 caFxEC sidebarfrombtn">Skicka</button>
+                                        </p></div>
+                                        <div id="errorFrom"></div>
+                                        <div id="successMessage"></div>
+                                    </form>
                                 </div>
                               </div>
                               <div class="SideContactFormstyled__ContactContainer-sc-xpl7fe-10 jQETUf">
@@ -851,26 +850,7 @@
                          <h2 class="text__heading_xl-sc-1xracbr-2 contactFormContentstyle__Header-sc-1wvwxzl-3 dDQFpA GuKcz">Nyfiken på att se vårt arbete i andra spännande projekt?</h2>
                          <p class="text__paragraph-sc-1xracbr-7 contactFormContentstyle__Paragraph-sc-1wvwxzl-4 kITvjv bBiTzt">Vi har levererat framstående resultat inom diverse branscher. Utforska våra projekt inom olika områden för att få en djupare inblick i vårt mångsidiga arbete. Kontakta oss för att inleda en dialog om hur vi kan anpassa vår expertis för att möta dina specifika behov och skapa något enastående tillsammans!</p>
                          <h5 class="text__heading_sm-sc-1xracbr-5 contactFormContentstyle__SubHeader-sc-1wvwxzl-5 iehGeS ijChgB">Send an Email</h5>
-                         <form id="yourForm" class="contactFormContentstyle__FormWrapper-sc-1wvwxzl-12 iiTQIG">
-                           <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi">
-                             <input type="text" placeholder="Namn*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="name" required />
-                             <div class="error-message" id="nameError"></div>
-                             <input type="email" placeholder="E-post*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="email" required />
-                             <div class="error-message" id="emailError"></div>
-                             <input type="tel" placeholder="Telefonnummer" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="phoneNumber" />
-                             <input type="text" placeholder="Jobbtitel" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="jobTitle" />
-                           </div>
-                           <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi">
-                             <textarea placeholder="Meddelande" class="contactFormContentstyle__InputField-sc-1wvwxzl-17 jLiNwd" name="message"></textarea>
-                             <div class="error-message" id="messageError"></div>
-                             <p class="text__paragraph_small-sc-1xracbr-9 contactFormContentstyle__InputLabel-sc-1wvwxzl-18 ksIOdr jLQVVy">
-                               <input type="checkbox" class="contactFormContentstyle__InputCheckbox-sc-1wvwxzl-19 cSaYma" name="checkbox" required />Jag godkänner villkoren i pasver:s
-                               <a href="../../../privacy-cookie-policy/index.html" class="contactFormContentstyle__GdprLink-sc-1wvwxzl-20 ildqRY">personuppgiftspolicy.</a>
-                             </p>
-                             <button type="button" onclick="submitForm()" class="contactFormContentstyle__SubmitButton-sc-1wvwxzl-21 gLuJmm" >Skicka</button>
-                             <p id="successMessage" style="display: none; color: green; margin-top: 10px; font-weight: bold;">Tack för ditt meddelande! Vi återkommer snart.</p>
-                           </div>
-                         </form>
+                        
                        </div>
                        <div class="contactFormContentstyle__Contact-sc-1wvwxzl-6 jOBgVe">
                          <img src="/Images/pic.jpg" alt="" class="contactFormContentstyle__Image-sc-1wvwxzl-7 gFpHiR" />
