@@ -460,20 +460,20 @@
                                  <h5 class="text__heading_sm-sc-1xracbr-5 SideContactFormstyled__FormTitle-sc-xpl7fe-8 iehGeS eptbJs">Kom igång redan idag!</h5>
                                  <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__FormParagraph-sc-xpl7fe-9 ksIOdr cyMEjy">Boka 30 minuters kostnadsfri rådgivning med oss för att få våra tips och ta reda på vad vi kan åstadkomma tillsammans.</p>
                                <div class="SideContactFormstyled__InnerFormWrapper-sc-xpl7fe-5 qYfOQ">
-                                   <form action="" id="yourForm">
-                                        <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
-                                            <input type="text" placeholder="Namn*" value="" name="name" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" required="">
-                                            <input type="email" placeholder="E-post*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="email" name="email" required="">
-                                            <input type="text" placeholder="Telefonnummer" name="phoneNumber" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc">
-                                        </div>
-                                        <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
-                                            <textarea placeholder="Meddelande" name="message" class="SideContactFormstyled__InputField-sc-xpl7fe-21 bYTiwv"></textarea>
-                                            <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__InputLabel-sc-xpl7fe-22 ksIOdr iYTukQ">
-                                                <button class="SideContactFormstyled__SubmitButton-sc-xpl7fe-26 caFxEC sidebarfrombtn">Skicka</button>
-                                        </p></div>
-                                        <div id="errorFrom"></div>
-                                        <div id="successMessage"></div>
-                                    </form>
+                                    <form action="" id="yourForm">
+                                    <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
+                                        <input type="text" placeholder="Namn*" value="" name="name" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" required="">
+                                        <input type="email" placeholder="E-post*" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc" id="email" name="email" required="">
+                                        <input type="text" placeholder="Telefonnummer" name="phoneNumber" value="" class="SideContactFormstyled__Input-sc-xpl7fe-20 cwoHtc">
+                                    </div>
+                                    <div class="SideContactFormstyled__FormColumn-sc-xpl7fe-17 iSgPVl">
+                                        <textarea placeholder="Meddelande" name="message" class="SideContactFormstyled__InputField-sc-xpl7fe-21 bYTiwv"></textarea>
+                                        <p class="text__paragraph_small-sc-1xracbr-9 SideContactFormstyled__InputLabel-sc-xpl7fe-22 ksIOdr iYTukQ">
+                                            <button class="SideContactFormstyled__SubmitButton-sc-xpl7fe-26 caFxEC sidebarfrombtn">Skicka</button>
+                                    </p></div>
+                                    <div id="errorFrom"></div>
+                                    <div id="successMessage"></div>
+                                </form>
                                 </div>
                               </div>
                               <div class="SideContactFormstyled__ContactContainer-sc-xpl7fe-10 jQETUf">
@@ -564,7 +564,7 @@
                          <h2 class="text__heading_xl-sc-1xracbr-2 contactFormContentstyle__Header-sc-1wvwxzl-3 dDQFpA GuKcz">Vill du veta mer?</h2>
                          <p class="text__paragraph-sc-1xracbr-7 contactFormContentstyle__Paragraph-sc-1wvwxzl-4 kITvjv bBiTzt">Behöver du någon som lotsar dig igenom den digitala världen? Vi svarar gärna på dina frågor, guidar dig eller berättar mer om hur vi jobbar. Skicka ett mail så kontaktar vi dig! </p>
                          <h5 class="text__heading_sm-sc-1xracbr-5 contactFormContentstyle__SubHeader-sc-1wvwxzl-5 iehGeS ijChgB">Send an Email</h5>
-                        <form id="yourForm" class="contactFormContentstyle__FormWrapper-sc-1wvwxzl-12 iiTQIG" data-gtm-form-interact-id="0">
+                         <form action='' id="yourForm2" class="contactFormContentstyle__FormWrapper-sc-1wvwxzl-12 iiTQIG" data-gtm-form-interact-id="0">
                              <div id="errorFrom"></div>
                            <div class="contactFormContentstyle__FormColumn-sc-1wvwxzl-13 eqgEDi">
                              <input type="text" placeholder="Namn*" value="" class="contactFormContentstyle__Input-sc-1wvwxzl-16 kkaabq" name="name" required="" data-gtm-form-interact-field-id="0">
@@ -578,7 +578,7 @@
                              <textarea placeholder="Meddelande" class="contactFormContentstyle__InputField-sc-1wvwxzl-17 jLiNwd" name="message" data-gtm-form-interact-field-id="4"></textarea>
                              <div class="error-message" id="messageError"></div>
                              <button type="submit" class="contactFormContentstyle__SubmitButton-sc-1wvwxzl-21 gLuJmm">Skicka</button>
-                             <p id="successMessage" style="color: green; margin-top: 10px; font-weight: bold;">Your message has been sent successfully!</p>
+                             <p id="successMessage" class="successMessage" style="color: green; margin-top: 10px; font-weight: bold;"></p>
                            </div>
                          </form>
                        </div>
@@ -654,38 +654,59 @@
       </div>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
-         $(document).ready(function () {
-    $('#yourForm').submit(function (event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Serialize form data
-        var formData = $(this).serialize();
-
-        // AJAX request
-        $.ajax({
-            url: 'https://pasver.se/processform.php',
-            method: 'POST',
-            data: formData,
-            dataType: 'json',
-            success: function (response) {
-                
-                console.log(response);
-                if (response.success) {
-                    $('#successMessage').text(response.success);
-                } else {
-                    console.error(response.error);
-                }
-            },
-            error: function (xhr, status, error) {
-                console.error(error);
-            }
-        });
-
-        // Clear the form fields
-        $(this).trigger('reset');
-    });
-});
-      </script>
+     $(document).ready(function () {
+         $('#yourForm').submit(function (event) {
+             event.preventDefault(); 
+             // Serialize form data
+             var formData = $(this).serialize();
+             // AJAX request
+             $.ajax({
+                 url: 'https://pasver.se/processform.php',
+                 method: 'POST',
+                 data: formData,
+                 dataType: 'json',
+                 success: function (response) {
+                     console.log('Response:', response); // Log response from server
+                     if (response.success) {
+                        
+                         $('#successMessage').text(response.success);
+                     } else {
+                         console.error(response.error);
+                     }
+                 },
+                 error: function (xhr, status, error) {
+                     console.error(error);
+                 }
+             });
+ 
+             // Clear the form fields
+             $(this).trigger('reset');
+         });
+          $('#yourForm2').submit(function (event) {
+             event.preventDefault(); 
+             // Serialize form data
+             var formData = $(this).serialize();
+             // AJAX request
+             $.ajax({
+                 url: 'https://pasver.se/processform.php',
+                 method: 'POST',
+                 data: formData,
+                 dataType: 'json',
+               success: function (response) {
+                   console.log(response.success);
+                   debugger
+         $('.successMessage').text(response.success);
+ },
+                 error: function (xhr, status, error) {
+                     console.error(error);
+                 }
+             });
+ 
+             // Clear the form fields
+             $(this).trigger('reset');
+         });
+     });
+ </script>
       <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/vara-tjanster/anlita-ett-tech-team/";window.___webpackCompilationHash="6eca5ca3beedc7450e8c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-752e2013a31fa14e7eac.js"],"app":["/app-40c35b496b3ab4a12bd3.js"],"gatsby-plugin-image":["/gatsby-plugin-image-e0257f4cbe694c90b7ba.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-94cf5e3edf63eec8bb55.js"],"component---src-templates-news-tsx":["/component---src-templates-news-tsx-86f9f5d83b324bc34c0e.js"],"component---src-templates-page-tsx":["/component---src-templates-page-tsx-2f281419ac9369c01938.js"]};/*]]>*/</script><script src="../../polyfill-752e2013a31fa14e7eac.js" nomodule=""></script><script src="../../app-40c35b496b3ab4a12bd3.js" async=""></script><script src="../../dc6a8720040df98778fe970bf6c000a41750d3ae-a3cb1a49be3896b12e36.js" async=""></script><script src="../../framework-ab0eeed1aa5464a561cf.js" async=""></script><script src="../../webpack-runtime-710d81178e1f209a136c.js" async=""></script>
    </body>
 </html>
