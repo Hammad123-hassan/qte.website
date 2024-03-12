@@ -483,17 +483,20 @@
                            <div class="AddressHerostyle__Content-sc-hj46eg-2 hbMtpn">
                               <h5 class="text__heading_sm-sc-1xracbr-5 AddressHerostyle__FormTitle-sc-hj46eg-13 iehGeS dzIuRD">Hur kan vi hjälpa dig?</h5>
                               <div class="AddressHerostyle__FormWrapper-sc-hj46eg-14 dnQQTP">
-                                 <form id="myForm">
-                                     <input type="text" placeholder="Namn*" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" id="name"/>
-                                     <input type="text" placeholder="E-post*" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" id="email"/>
-                                     <input type="text" placeholder="Telefonnummer" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" id="phone"/>
-                                     <input type="text" placeholder="Jobbtitel" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" id="jobTitle"/>
-                                     <textarea placeholder="Meddelande" class="AddressHerostyle__InputField-sc-hj46eg-18 bRRkwU" id="message"></textarea>
+                                 <form  action='' id="yourForm2" >
+                                     <input type="text" placeholder="Namn*" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" name="name" required="" data-gtm-form-interact-field-id="0"/>
+                                     <div class="error-message" id="nameError"></div>
+                                     <input type="email" placeholder="E-post*" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" name="email" required="" data-gtm-form-interact-field-id="1"/>
+                                     <div class="error-message" id="emailError"></div>
+                                     <input type="text" placeholder="Telefonnummer" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" name="phoneNumber" data-gtm-form-interact-field-id="2"/>
+                                     <input type="text" placeholder="Jobbtitel" value="" class="AddressHerostyle__Input-sc-hj46eg-17 bbJicJ" id="jobTitle" data-gtm-form-interact-field-id="3"/>
+                                     <textarea placeholder="Meddelande" class="AddressHerostyle__InputField-sc-hj46eg-18 bRRkwU"  name="message" data-gtm-form-interact-field-id="4"></textarea>
                                      <p class="text__paragraph_small-sc-1xracbr-9 AddressHerostyle__InputLabel-sc-hj46eg-19 ksIOdr dNjbwT">
                                          <input type="checkbox" required="" class="AddressHerostyle__InputCheckbox-sc-hj46eg-20 bfpfSO" id="agreeCheckbox"/>
                                          Jag godkänner villkoren i pasver:s<a href="../../../privacy-cookie-policy/index.html" class="AddressHerostyle__GdprLink-sc-hj46eg-21 lhmMHj">personuppgiftspolicy.</a>
                                      </p>
                                      <button type="submit" class="AddressHerostyle__SubmitButton-sc-hj46eg-22 llHMn">Skicka</button>
+                                     <p id="successMessage" class="successMessage" style="color: green; margin-top: 10px; font-weight: bold;"></p>
                                  </form>
                              </div>
                            </div>
@@ -514,114 +517,7 @@
                         </div>
                      </div>
                   </section>
-                  <!-- <section id="contacts">
-                     <div class="wrapper__main_inner-sc-d7vgux-0 Contactsstyle__MainInner-sc-dz4od0-0 fhPlTV">
-                        <h3 class="text__heading_lg-sc-1xracbr-3 Contactsstyle__Header-sc-dz4od0-1 bMjjZJ eJuEwT">Är det mina uppgifter du letar efter?</h3>
-                        <div class="Contactsstyle__Content-sc-dz4od0-2 iTPMlb">
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/jonatan_arnlund.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Jonatan Arnlund</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Grundare &amp; vd</p>
-                                 <a href="mailto:mattheos.tasios@pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">mattheos.tasios@pasver.se</a><a href="tel:076-611 11 18" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">076-611 11 18</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/oskar_rahlen.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Oskar Råhlén</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Grundare &amp; strategisk rådgivare</p>
-                                 <a href="mailto:oskar@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">oskar@Pasver.se</a><a href="tel:073 - 423 93 19" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">073 - 423 93 19</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/jakob_rahlen.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Jakob Råhlén</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Grundare &amp; operativ chef</p>
-                                 <a href="mailto:jakob@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">jakob@Pasver.se</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/esther_alenius.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Esther Alenius</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Marknadschef</p>
-                                 <a href="mailto:esther@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">esther@Pasver.se</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/erik_terngard.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Erik Terngård</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Försäljning</p>
-                                 <a href="mailto:erik.terngard@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">erik.terngard@Pasver.se</a><a href="tel:076 - 647 97 66" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">076 - 647 97 66</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/ami_gustafson.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Ami Gustafson</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Hr-chef</p>
-                                 <a href="mailto:ami@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">ami@Pasver.se</a><a href="tel:070 - 974 96 41" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">070 - 974 96 41</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/hugo_stancovich.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Hugo Stancovich</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Kontorsassistent</p>
-                                 <a href="mailto:hugo@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">hugo@Pasver.se</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/therese_banstrom.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Therese Banström</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Projektledare</p>
-                                 <a href="mailto:therese@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">therese@Pasver.se</a><a href="tel:076 - 860 53 45" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">076 - 860 53 45</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/jacob_valfridsson.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Jacob Valfridsson</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Projektledare</p>
-                                 <a href="mailto:jacob.valfridsson@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">jacob.valfridsson@Pasver.se</a><a href="tel:073 - 143 90 90" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">073 - 143 90 90</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/amanda_wettermark.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Amanda Wettermark</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Projektledare</p>
-                                 <a href="mailto:amanda@Pasver.se" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">amanda@Pasver.se</a><a href="tel:070 - 141 15 07" class="text__a-sc-1xracbr-10 Contactsstyle__A-sc-dz4od0-9 ljyTzZ cAjPHD">070 - 141 15 07</a>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/irma_kukuljac.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Irma Kukuljac</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Projektledare (Tjänstledig)</p>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/isabelle_eerola.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Isabelle Eerola</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Projektledare (Tjänstledig)</p>
-                              </div>
-                           </div>
-                           <div class="Contactsstyle__Block-sc-dz4od0-3 eMsAIy">
-                              <img src="https://wp.Pasverprod.se/wp-content/uploads/2024/01/jennifer_edstrom.jpg" alt="" class="Contactsstyle__Image-sc-dz4od0-4 iBcWTq"/>
-                              <div class="Contactsstyle__TextContainer-sc-dz4od0-5 fIJZtn">
-                                 <h5 class="text__heading_sm-sc-1xracbr-5 Contactsstyle__Subheader-sc-dz4od0-6 iehGeS iYQqIE">Jennifer Edström</h5>
-                                 <p class="text__detail_text-sc-1xracbr-11 Contactsstyle__Detail-sc-dz4od0-7 gyZFdf lmEZvV">Kontorsassistent (Tjänstledig)</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </section> -->
+      
                   <section id="text-with-two-images" class="TextWithTwoImagesstyle__Section-sc-1j3j7a4-0 gctzJo">
                      <div class="wrapper__main_inner-sc-d7vgux-0 TextWithTwoImagesstyle__MainInner-sc-1j3j7a4-1 fhPlTV fBLjIJ">
                         <div class="TextWithTwoImagesstyle__Content-sc-1j3j7a4-2 lecsVy">
@@ -676,8 +572,7 @@
                            </a>
                            <div class="Footerstyle__Info-sc-3wf7fx-11 cZMlzJ">
                               <a href="mailto:mattheos.tasios@pasver.se" class="Footerstyle__Email-sc-3wf7fx-14 gZRRnH">mattheos.tasios@pasver.se</a><a href="tel:0733220455" class="Footerstyle__TelNumber-sc-3wf7fx-13 sojqq">076-611 11 18</a>
-                              <div class="Footerstyle__SocialsContainer-sc-3wf7fx-22 frBHM"><a href="#" target="_blank"><img src="https://wp.qteprod.se/wp-content/uploads/2022/01/instagram.svg" alt=""></a><a href="#" target="_blank"><img src="https://wp.qteprod.se/wp-content/uploads/2022/01/linkedin.svg" alt=""></a><a href="#" target="_blank"><img src="https://wp.qteprod.se/wp-content/uploads/2022/01/facebook.svg" alt=""></a></div>
-                           </div>
+<div class="Footerstyle__SocialsContainer-sc-3wf7fx-22 frBHM"><a href="#" target="_blank"><img src="https://wp.qteprod.se/wp-content/uploads/2022/01/instagram.svg" alt=""/></a><a href="https://www.linkedin.com/company/101879926/" target="_blank"><img src="https://wp.qteprod.se/wp-content/uploads/2022/01/linkedin.svg" alt=""/></a><a href="#" target="_blank"><img src="https://wp.qteprod.se/wp-content/uploads/2022/01/facebook.svg" alt=""/></a></div>                           </div>
                            <p class="text__detail_text-sc-1xracbr-11 Footerstyle__MobileAddress-sc-3wf7fx-20 gyZFdf crSfNv">Ekfatsgatan 4, <br />
                               Stockholm 11757
                            </p>
@@ -744,27 +639,6 @@
          });
      });
  </script>
-      <script>
-         document.getElementById("myForm").addEventListener("submit", function(event) {
-             event.preventDefault(); // Prevents the default form submission
-     
-             // Retrieve input field values
-             var name = document.getElementById("name").value;
-             var email = document.getElementById("email").value;
-             var phone = document.getElementById("phone").value;
-             var jobTitle = document.getElementById("jobTitle").value;
-             var message = document.getElementById("message").value;
-             var agreeCheckbox = document.getElementById("agreeCheckbox").checked;
-     
-             // Log the values to the console
-             console.log("Name:", name);
-             console.log("Email:", email);
-             console.log("Phone:", phone);
-             console.log("Job Title:", jobTitle);
-             console.log("Message:", message);
-             console.log("Agree to terms:", agreeCheckbox);
-         });
-     </script>
   
       <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/kontakta-oss/";window.___webpackCompilationHash="6eca5ca3beedc7450e8c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-752e2013a31fa14e7eac.js"],"app":["/app-40c35b496b3ab4a12bd3.js"],"gatsby-plugin-image":["/gatsby-plugin-image-e0257f4cbe694c90b7ba.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-94cf5e3edf63eec8bb55.js"],"component---src-templates-news-tsx":["/component---src-templates-news-tsx-86f9f5d83b324bc34c0e.js"],"component---src-templates-page-tsx":["/component---src-templates-page-tsx-2f281419ac9369c01938.js"]};/*]]>*/</script><script src="../polyfill-752e2013a31fa14e7eac.js" nomodule=""></script><script src="../app-40c35b496b3ab4a12bd3.js" async=""></script><script src="../dc6a8720040df98778fe970bf6c000a41750d3ae-a3cb1a49be3896b12e36.js" async=""></script><script src="../framework-ab0eeed1aa5464a561cf.js" async=""></script><script src="../webpack-runtime-710d81178e1f209a136c.js" async=""></script>
    </body>
