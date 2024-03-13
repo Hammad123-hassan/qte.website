@@ -2720,7 +2720,7 @@
           plugin: n(9608),
           options: {
             plugins: [],
-            icon: "/images/favicon.ico",
+            icon: "./images/favicon.ico",
             legacy: !0,
             theme_color_in_head: !0,
             cache_busting_mode: "query",
